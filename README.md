@@ -67,7 +67,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ####  Install Packages
 
 ```
-uv sync --all-packages --frozen \
+uv sync derisk --frozen \
+uv sync derisk-core --frozen \
+uv sync derisk-ext --frozen \
+uv sync derisk-client --frozen \
 --extra "base" \
 --extra "proxy_openai" \
 --extra "rag" \
